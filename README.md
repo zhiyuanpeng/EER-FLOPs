@@ -6,7 +6,6 @@ Efficiency-Effectiveness Reranking FLOPs for LLM-based Rerankers
 ## Installation
 Install via Conda (Python=3.11)
 ```bash
-cd src
 conda env create -f e2rflops.yml
 ```
 
