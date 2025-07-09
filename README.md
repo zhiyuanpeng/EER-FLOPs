@@ -13,6 +13,16 @@ The code base is adopted from [llm-reranker](https://github.com/ielab/llm-ranker
 
 ---
 
+## Data Description
+
+The data folder `./data` contains experimental results for recording FLOP counts and latency on Qwen2.5 and Flan-T5 model series with the DL19 and DL20 datasets and various set sizes.
+
+The files are named by [model_name]\_[dataset]\_[num_child].csv.
+
+In each file, each row correpsonds to a query. The lists contain the results from running the setwise algorithm to rerank top-100 documents.
+
+---
+
 ## Python code example:
 
 ```Python
@@ -66,34 +76,4 @@ CUDA_VISIBLE_DEVICES=0 python3 src/run.py \
           --k 10
 ```
 We provide the resulting files in [data](https://github.com/zhiyuanpeng/FlopsRank/tree/main/data).
-
----
-
-Qwen2.5
-3B, 7B, 14B
-
-
-
-size_1(dl19)_numberOfchild(1(set=2), 2(set=3), 3(set=4))
-
-#doc cut at 100
-
-#
-comparisons,input_length,docs_length,output_length,flops,time
-
-comparisons:
-for one query, the # of LLM-call to rerank 100 documents retrieved by BM25
-
-input_length:
-the number of input ids
-
-doc_length:
-
-a list of doc_length
-
-output_length:
-# 
-
-
-
 
