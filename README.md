@@ -76,5 +76,5 @@ CUDA_VISIBLE_DEVICES=0 python3 src/run.py \
           --method heapsort \
           --k 10
 ```
-We provide the resulting files in [data](https://github.com/zhiyuanpeng/FlopsRank/tree/main/data).
+We provide the resulting files in [data](./data).
 
