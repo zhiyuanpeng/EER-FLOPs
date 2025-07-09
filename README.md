@@ -27,7 +27,7 @@ In each file, each row correpsonds to a query. The lists contain the results fro
 ## Python code example:
 
 ```Python
-from src import calculator
+from src.utils import calculator
 
 # Qwen2.5-7B configuration
 input_length = 200
