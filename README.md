@@ -1,5 +1,6 @@
-# FlopsRank
-FLOPs-Normalized Efficiency-Effectiveness Metrics for LLM-based Rerankers
+# EER-FLOPs
+
+Efficiency-Effectiveness Reranking FLOPs for LLM-based Rerankers
 
 ---
 ## Installation
